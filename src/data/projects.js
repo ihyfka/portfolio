@@ -10,11 +10,9 @@ export const projects = [
     slug: "mahmet-global",
     title: "Mahmet Global Ltd",
     stack: ["React", "Tailwind", "REST", "Javascript"],
-    image:
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=800&auto=format&fit=crop",
+    image: "/project-images/mg-global-1.webp",
 
-    image2:
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=800&auto=format&fit=crop",
+    image2: "/project-images/mg-global-2.webp",
     desc: "A Northern Nigeria-based real estate and construction firm delivering secure, culturally adapted, and transparent infrastructure with cost-effective modern designs.",
 
     client: "Mahmet Global",
@@ -31,7 +29,7 @@ export const projects = [
     title: "Velo",
     stack: ["Express", "Node", "React", "Supabase"],
     image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1542435503-956c469947f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmxvZ2dpbmd8ZW58MHx8MHx8fDA%3D",
     desc: "A modern blogging platform where ideas come to life. Write, publish, and share engaging stories with a clean, intuitive experience designed for hobbyists and readers alike.",
 
     client: "Personal",
@@ -47,8 +45,9 @@ export const projects = [
     slug: "token-watch",
     title: "TokenWatch",
     stack: ["Node", "Axios", "React", "Tailwind"],
-    image:
-      "https://images.unsplash.com/photo-1777541743077-de523b619fb3?w=500&auto=format&fit=crop&q=60",
+    image: "/project-images/tw-1.webp",
+    image2: "/project-images/tw-2.webp",
+
     desc: "A modern cryptocurrency dashboard showcasing market trends, featured coins, aggregated news, and key market insights. through a clean, responsive interface.",
 
     client: "Personal",
