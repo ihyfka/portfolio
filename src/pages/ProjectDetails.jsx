@@ -82,7 +82,7 @@ export default function ProjectDetails() {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-[0.4rem] py-3 px-6 rounded-full text-[1rem] font-semibold no-underline bg-white text-black transition-[background,opacity] duration-200 ease-linear border border-transparent hover:opacity-[0.85]"
+                  className="inline-flex items-center gap-[0.4rem] py-3 px-6 rounded-full text-[1rem] font-semibold no-underline bg-white text-black transition-[background,opacity] duration-200 ease-linear border border-transparent hover:opacity-[0.85] max-[640px]:text-[0.875rem] max-[640px]:py-2.5 max-[640px]:px-4.5"
                 >
                   Visit Project
                   <ExternalLink size={18} strokeWidth={2.5} />
@@ -92,7 +92,7 @@ export default function ProjectDetails() {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-[0.4rem] py-3 px-6 rounded-full text-[1rem] font-semibold no-underline bg-white text-black transition-[background,opacity] duration-200 ease-linear border border-transparent hover:opacity-[0.85]"
+                  className="inline-flex items-center gap-[0.4rem] py-3 px-6 rounded-full text-[1rem] font-semibold no-underline bg-white text-black transition-[background,opacity] duration-200 ease-linear border border-transparent hover:opacity-[0.85] max-[640px]:text-[0.875rem] max-[640px]:py-2.5 max-[640px]:px-4.5"
                 >
                   Ongoing
                 </a>
@@ -102,7 +102,7 @@ export default function ProjectDetails() {
                   href={project.repoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-[0.4rem] py-3 px-6 rounded-full text-[1rem] font-semibold no-underline bg-transparent text-white border border-[rgba(255,255,255,0.2)] transition-[background,opacity] duration-200 ease-linear hover:bg-[rgba(255,255,255,0.06)] hover:opacity-100"
+                  className="inline-flex items-center gap-[0.4rem] py-3 px-6 rounded-full text-[1rem] font-semibold no-underline bg-transparent text-white border border-[rgba(255,255,255,0.2)] transition-[background,opacity] duration-200 ease-linear hover:bg-[rgba(255,255,255,0.06)] hover:opacity-100 max-[640px]:text-[0.875rem] max-[640px]:py-2.5 max-[640px]:px-4.5"
                 >
                   Source
                 </a>
