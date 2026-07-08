@@ -115,7 +115,7 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="py-3 px-7 text-black font-f2 font-medium rounded-pill cursor-pointer bg-white border border-[rgba(255,255,255,0.116)] w-fit transition-opacity duration-300 mt-4 self-end hover:opacity-90 max-[640px]:text-[0.875rem] max-[640px]:py-2.5 max-[640px]:px-4.5 max-[640px]:self-start"
+              className="py-3 px-6 text-black font-f2 font-medium rounded-pill cursor-pointer bg-white border border-[rgba(255,255,255,0.116)] w-fit transition-opacity duration-300 mt-4 self-end hover:opacity-90 max-[640px]:text-[0.875rem] max-[640px]:py-2.5 max-[640px]:px-4.5 max-[640px]:self-start"
             >
               Send
             </button>
