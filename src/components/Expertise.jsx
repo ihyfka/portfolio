@@ -8,26 +8,36 @@ const frontendSkillSet = [
   },
   {
     id: 2,
+    name: "NextJs",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg",
+  },
+  {
+    id: 3,
     name: "Framer Motion",
     i: "devicon-framermotion-original text-[20px] mr-2",
   },
   {
-    id: 3,
+    id: 4,
     name: "Tailwind",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
   },
   {
-    id: 4,
+    id: 5,
     name: "JavaScript",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
   },
   {
-    id: 5,
+    id: 6,
     name: "HTML5",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
   },
   {
-    id: 6,
+    id: 7,
+    name: "TypeScript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+  },
+  {
+    id: 8,
     name: "CSS3",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
   },
@@ -90,6 +100,11 @@ const otherSkillSet = [
   },
   {
     id: 6,
+    name: "Vercel",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original-wordmark.svg",
+  },
+  {
+    id: 7,
     name: "Figma",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
   },
