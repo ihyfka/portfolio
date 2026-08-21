@@ -9,16 +9,16 @@ export const projects = [
     id: 1,
     slug: "mahmet-global",
     title: "Mahmet Global Ltd",
-    stack: ["React", "Tailwind", "REST", "Javascript"],
-    image: "/project-images/mg-global-1.webp",
-
-    image2: "/project-images/mg-global-2.webp",
+    stack: ["Nextjs", "TypeScript", "Tailwind", "CSS3"],
+    image: "/project-images/mg-global-1.png",
+    image2: "/project-images/mg-global-2.png",
+    image3: "/project-images/mg-global-3.png",
     desc: "A Northern Nigeria-based real estate and construction firm delivering secure, culturally adapted, and transparent infrastructure with cost-effective modern designs.",
 
     client: "Mahmet Global",
     year: "2026",
     role: "Web Developer",
-    liveUrl: "https://mg-global.pages.dev",
+    liveUrl: "https://mg-v2-iota.vercel.app",
     repoUrl: "",
     longDesc:
       "Mahmet Global Limited required a digital presence that reflected their positioning as a trusted infrastructure partner across Northern Nigeria. The platform was built with React and Tailwind CSS, integrating REST APIs for property listings and project showcases. Key challenges included adapting layouts for low-bandwidth environments and ensuring the interface communicated trust and professionalism to a local audience.",
