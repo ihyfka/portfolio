@@ -7,6 +7,24 @@
 export const projects = [
   {
     id: 1,
+    slug: "velo",
+    title: "Velo",
+    stack: ["TypeScript", "React", "Node", "Vercel"],
+    image: "/project-images/vl-1.png",
+    image2: "/project-images/vl-2.png",
+    image3: "/project-images/vl-3.png",
+    desc: "A modern blogging platform where ideas come to life. Write, publish, and share engaging stories with a clean, intuitive experience designed for hobbyists and readers alike.",
+
+    client: "Personal",
+    year: "2025",
+    role: "Full-stack Developer",
+    liveUrl: "https://velo.name.ng",
+    repoUrl: "",
+    longDesc:
+      "Velo was built to provide a clean, responsive space for creating and managing engaging blog-like posts. Developed with a modern toolstack, it features authentication, rich text editing, and secure content management. Key challenges included implementing protected routes, managing application state, ensuring responsive design, and building reusable, maintainable components while delivering a smooth user experience.",
+  },
+  {
+    id: 2,
     slug: "mahmet-global",
     title: "Mahmet Global Ltd",
     stack: ["Nextjs", "TypeScript", "Tailwind", "CSS3"],
@@ -23,23 +41,7 @@ export const projects = [
     longDesc:
       "Mahmet Global Limited required a digital presence that reflected their positioning as a trusted infrastructure partner across Northern Nigeria. The platform was built with React and Tailwind CSS, integrating REST APIs for property listings and project showcases. Key challenges included adapting layouts for low-bandwidth environments and ensuring the interface communicated trust and professionalism to a local audience.",
   },
-  {
-    id: 2,
-    slug: "velo",
-    title: "Velo",
-    stack: ["Express", "Node", "React", "Supabase"],
-    image:
-      "https://images.unsplash.com/photo-1542435503-956c469947f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmxvZ2dpbmd8ZW58MHx8MHx8fDA%3D",
-    desc: "A modern blogging platform where ideas come to life. Write, publish, and share engaging stories with a clean, intuitive experience designed for hobbyists and readers alike.",
 
-    client: "Personal",
-    year: "2025",
-    role: "Full-stack Developer",
-    liveUrl: "https://velo.name.ng",
-    repoUrl: "",
-    longDesc:
-      "Velo was built to provide a clean, responsive space for creating and managing engaging blog-like posts. Developed with a modern toolstack, it features authentication, rich text editing, and secure content management. Key challenges included implementing protected routes, managing application state, ensuring responsive design, and building reusable, maintainable components while delivering a smooth user experience.",
-  },
   {
     id: 3,
     slug: "token-watch",
