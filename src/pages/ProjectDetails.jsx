@@ -1,11 +1,32 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft, ExternalLink, X } from "lucide-react";
 import { projects } from "../data/projects";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Footer from "../components/Footer";
+import { useState, useEffect } from "react";
 
 export default function ProjectDetails() {
   const { slug } = useParams();
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  useEffect(() => {
+    if (selectedImage) {
+      document.body.style.overflow = "hidden";
+      const handleKeyDown = (e) => {
+        if (e.key === "Escape") {
+          setSelectedImage(null);
+        }
+      };
+      window.addEventListener("keydown", handleKeyDown);
+      return () => {
+        document.body.style.overflow = "unset";
+        window.removeEventListener("keydown", handleKeyDown);
+      };
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [selectedImage]);
+
   const slugify = (str) =>
     String(str).trim().toLowerCase().replace(/\s+/g, "-");
 
@@ -110,28 +131,79 @@ export default function ProjectDetails() {
             </div>
           </div>
 
-          <div className="w-full rounded-3xl overflow-hidden mt-5 mb-3">
+          <div 
+            className="w-full rounded-3xl overflow-hidden mt-5 mb-3 cursor-zoom-in"
+            onClick={() => setSelectedImage(project.image)}
+          >
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-auto max-h-[70vh] object-cover block"
+              className="w-full h-auto max-h-[70vh] object-cover block transition-transform duration-500 hover:scale-102"
             />
           </div>
 
-          <div className="w-full rounded-3xl overflow-hidden">
-            {project.image2 && (
+          {project.image2 && (
+            <div 
+              className="w-full rounded-3xl overflow-hidden mb-3 cursor-zoom-in"
+              onClick={() => setSelectedImage(project.image2)}
+            >
               <img
                 src={project.image2}
                 alt={project.title}
-                className="w-full h-auto max-h-[70vh] object-cover block"
+                className="w-full h-auto max-h-[70vh] object-cover block transition-transform duration-500 hover:scale-102"
               />
-            )}
-          </div>
+            </div>
+          )}
+
+          {project.image3 && (
+            <div 
+              className="w-full rounded-3xl overflow-hidden mb-3 cursor-zoom-in"
+              onClick={() => setSelectedImage(project.image3)}
+            >
+              <img
+                src={project.image3}
+                alt={project.title}
+                className="w-full h-auto max-h-[70vh] object-cover block transition-transform duration-500 hover:scale-102"
+              />
+            </div>
+          )}
+
           <div className="flex flex-col items-center border-t mt-5 border-[rgba(255,255,255,0.116)]">
             <Footer />
           </div>
         </motion.div>
       </div>
+
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-100 flex items-center justify-center bg-black/95 p-4 sm:p-8 cursor-zoom-out"
+            onClick={() => setSelectedImage(null)}
+          >
+            <button
+              className="absolute top-4 right-4 sm:top-8 sm:right-8 text-white hover:text-gray-300 z-101 p-2 bg-white/10 rounded-full backdrop-blur-sm transition-colors hover:bg-white/20"
+              onClick={(e) => {
+                e.stopPropagation();
+                setSelectedImage(null);
+              }}
+            >
+              <X size={24} />
+            </button>
+            <motion.img
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              src={selectedImage}
+              alt="Fullscreen view"
+              className="max-w-full max-h-full object-contain cursor-default rounded-xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }
