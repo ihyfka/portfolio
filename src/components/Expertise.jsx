@@ -121,7 +121,7 @@ export default function Expertise() {
           initial={{ opacity: 0, y: 50, scale: 0.95 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.72, ease: "easeOut" }}
           className="text-section-title font-black tracking-[-0.05em] uppercase mb-12 leading-heading font-f1 text-white max-lg:text-section-title-tab max-sm:self-start max-sm:text-section-title-mobile max-sm:leading-heading-mobile max-sm:mb-8"
         >
           STACK

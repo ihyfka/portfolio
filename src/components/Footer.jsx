@@ -8,7 +8,7 @@ export default function Footer() {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+        transition={{ delay: 0.2, duration: 0.72, ease: "easeOut" }}
       >
         <div className="flex flex-row gap-[3rem] items-stretch">
           <div className="flex flex-col flex-wrap gap-[2rem]">

@@ -26,7 +26,7 @@ export default function About() {
             initial={{ opacity: 0, y: 50, scale: 0.95 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.72, ease: "easeOut" }}
           >
             ABOUT
           </motion.h2>
@@ -35,7 +35,7 @@ export default function About() {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            transition={{ delay: 0.2, duration: 0.72, ease: "easeOut" }}
             className="text-[#9ca3af] text-left text-body-lg leading-body max-w-3xl font-f2 max-sm:text-base"
           >
             <p>
@@ -59,7 +59,7 @@ export default function About() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            transition={{ delay: 0.4, duration: 0.72, ease: "easeOut" }}
             className="[&_button]:py-3 [&_button]:px-6 [&_button]:text-black [&_button]:font-f2 [&_button]:font-medium [&_button]:rounded-full [&_button]:cursor-pointer [&_button]:bg-white [&_button]:border [&_button]:border-[rgba(255,255,255,0.116)] [&_button]:transition-opacity [&_button]:duration-300 [&_button:hover]:opacity-90 max-sm:[&_button]:text-sm max-sm:[&_button]:py-2.5 max-sm:[&_button]:px-4.5"
           >
             <a href={resumePdf} target="_blank" rel="noopener noreferrer">

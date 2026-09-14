@@ -14,7 +14,7 @@ export const ProjectsHeader = memo(function ProjectsHeader() {
           initial={{ opacity: 0, y: 50, scale: 0.95 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.72, ease: "easeOut" }}
           className="text-section-title font-black tracking-[-0.05em] uppercase mb-6 leading-heading font-f1 max-[900px]:text-section-title-tab max-sm:text-section-title-mobile"
         >
           PROJECTS
@@ -24,7 +24,7 @@ export const ProjectsHeader = memo(function ProjectsHeader() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
+          transition={{ delay: 0.2, duration: 0.72, ease: "easeOut" }}
           className="text-[#9ca3af] text-body-lg font-f2 max-w-md leading-body max-sm:my-6 max-sm:text-[16px] max-sm:max-w-full"
         >
           Whether it's creating a brand identity, designing a website, or
@@ -37,7 +37,7 @@ export const ProjectsHeader = memo(function ProjectsHeader() {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
+        transition={{ delay: 0.4, duration: 0.72, ease: "easeOut" }}
       >
         <Link
           to="/projects"

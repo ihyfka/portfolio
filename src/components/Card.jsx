@@ -32,7 +32,7 @@ export function Card({ index, activeIndex, card, stack = [], onSwipe }) {
   return (
     <>
       <motion.div
-        className={`absolute inset-0 flex flex-col justify-around gap-3.5 h-full w-full py-5 px-5 ${offset !== 0 ? "bg-[#2a2a2a]" : "bg-[#131313] border border-[#fff2]"} rounded-card shadow-[0_12px_60px_rgba(0,0,0,0.7),0_2px_8px_rgba(0,0,0,0.5)] will-change-transform cursor-default touch-pan-y group max-[900px]:inset-0 max-[900px]:my-auto max-[900px]:h-min max-sm:rounded-[20px]`}
+        className={`absolute inset-0 flex flex-col justify-around gap-3.5 h-full w-full p-4 ${offset !== 0 ? "bg-[#2a2a2a]" : "bg-[#131313] border border-[#fff2]"} rounded-card shadow-[0_12px_60px_rgba(0,0,0,0.7),0_2px_8px_rgba(0,0,0,0.5)] will-change-transform cursor-default touch-pan-y group max-[900px]:inset-0 max-[900px]:my-auto max-[900px]:h-min max-sm:rounded-[20px]`}
         drag={offset === 0 ? "x" : false}
         dragConstraints={{ left: 0, right: 0 }}
         dragElastic={0.7}

@@ -49,7 +49,7 @@ export default function Contact() {
               initial={{ opacity: 0, y: 50, scale: 0.95 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
+              transition={{ duration: 0.72, ease: "easeOut" }}
             >
               GET IN TOUCH
             </motion.h2>
@@ -58,7 +58,7 @@ export default function Contact() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
+              transition={{ delay: 0.15, duration: 0.72, ease: "easeOut" }}
             >
               Got a big idea or an exciting partnership in mind? Feel free to
               reach out, let's build something great together.
@@ -71,7 +71,7 @@ export default function Contact() {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+            transition={{ delay: 0.3, duration: 0.72, ease: "easeOut" }}
           >
             <input
               type="checkbox"

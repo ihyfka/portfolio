@@ -71,7 +71,7 @@ export default function Hero() {
         <motion.img
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.45 }}
           className="h-auto min-h-125 max-h-[80vh] max-w-[100vw] object-contain grayscale max-[500px]:max-h-[50vh] max-[500px]:mb-0"
           src={clipped}
           alt="Moses Obinna"
@@ -80,9 +80,9 @@ export default function Hero() {
 
       <div className="relative w-full text-center mb-10 z-1 max-[500px]:order-1 max-[500px]:mb-4">
         <motion.h1
-          initial={{ y: 100, opacity: 0 }}
+          initial={{ y: 150, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.8 }}
+          transition={{ delay: 0.2, duration: 0.72 }}
           className="text-[clamp(3rem,18vw,17vw)] font-bold tracking-[-0.03em] text-white whitespace-nowrap mix-blend-difference leading-none font-f1 select-auto [-webkit-text-stroke:1px_rgba(255,255,255,0.133)]"
         >
           Web Developer
@@ -93,7 +93,7 @@ export default function Hero() {
         <motion.div
           initial={{ x: -30, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
+          transition={{ delay: 0.5, duration: 0.72 }}
           className="max-w-60 w-[30%] font-medium max-[700px]:max-w-[20rem] max-[500px]:max-w-full max-[500px]:w-[70%] max-[500px]:text-right"
         >
           <p className="font-f1 text-[25px] leading-normal text-white mix-blend-difference font-medium tracking-body">
@@ -104,7 +104,7 @@ export default function Hero() {
         <motion.div
           initial={{ x: 30, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
+          transition={{ delay: 0.5, duration: 0.72 }}
           className="max-w-60 w-[30%] font-medium text-right max-[500px]:max-w-full max-[500px]:w-[70%] max-[500px]:text-right"
         >
           <p className="font-f2 text-body-lg leading-normal text-[#9ca3af] mix-blend-difference font-medium tracking-body max-[700px]:text-[16px]">
