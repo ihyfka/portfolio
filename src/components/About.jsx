@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Library } from "lucide-react";
-import resumePdf from "../assets/file/Moses_Obinna_Resume.pdf";
+import doodle from "../assets/images/doodles.svg"
+import resumePdf from "/file/Moses_Obinna_Resume.pdf";
 
 export default function About() {
   return (
@@ -13,11 +14,7 @@ export default function About() {
           className="flex h-full items-center w-full max-[900px]:hidden"
           aria-hidden="true"
         >
-          <Library
-            style={{ scale: 0.9, height: "100%", width: "100%" }}
-            strokeWidth={2}
-            strokeLinecap="square"
-          />
+          <img src={doodle}/>
         </div>
 
         <div className="flex flex-col gap-8">
